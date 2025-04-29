@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e2759bd57d8ea034aa649c179b358689
+timeCreated: 1454510415
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 55263
+  packageName: Stump
+  packageVersion: 1.0
+  assetPath: Assets/Stump/Scenes/Scene_Stump.unity
+  uploadId: 101319
