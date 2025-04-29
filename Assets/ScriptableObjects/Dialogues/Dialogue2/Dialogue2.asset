@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646d93be272141340a3d6054a5c1d904, type: 3}
+  m_Name: Dialogue2
+  m_EditorClassIdentifier: 
+  autoSelect: 1
+  stages:
+  - {fileID: 11400000, guid: b4135e68d560b6646b3b84762cd90894, type: 2}
+  - {fileID: 11400000, guid: 310fbe2b36b7d4047aff594cdf767e32, type: 2}
+  - {fileID: 11400000, guid: 2722156303b2e724c832192ed7ba38fc, type: 2}
+  - {fileID: 11400000, guid: 1ed2db051d513bb41b8afca6624ec4c4, type: 2}
+  requirements:
+    completedQuests: 00000000
+    questsNotInProgress: 
+    questInProgress: 1
+    stageInProgress: 1

@@ -1,0 +1,38 @@
+{
+    "level": 1,
+    "hp": 0,
+    "x": 128.0,
+    "y": 31.0,
+    "z": 128.0,
+    "xRot": 0.0,
+    "yRot": 0.0,
+    "zRot": 0.0,
+    "currentQuest": 0,
+    "timeStampInTicks": 638671123466559205,
+    "completedQuests": [],
+    "failedQuests": [],
+    "deadUniqueNPCs": [],
+    "quests": [
+        {
+            "id": 0,
+            "states": [
+                0,
+                -1
+            ],
+            "amounts": [
+                0,
+                0
+            ]
+        }
+    ],
+    "inventoryContent": [
+        {
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "itemUniqueName": "i_med_medkit",
+            "amount": 1
+        }
+    ]
+}

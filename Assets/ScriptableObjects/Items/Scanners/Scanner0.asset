@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fc50dd57ca82b40a7e29885998b680, type: 3}
+  m_Name: Scanner0
+  m_EditorClassIdentifier: 
+  uniqueName: i_scan_primitive
+  displayName: "\u0421\u043A\u0430\u043D\u043D\u0435\u0440 \"\u041F\u0440\u043E\u043C\u0435\u0442\u0435\u0439\""
+  description: "\u0421\u043A\u0430\u043D\u043D\u0435\u0440, \u0440\u0435\u0430\u0433\u0438\u0440\u0443\u044E\u0449\u0438\u0439
+    \u043D\u0430 \u043E\u0431\u044B\u0447\u043D\u044B\u0435 \u0430\u0440\u0442\u0435\u0444\u0430\u043A\u0442\u044B."
+  questItem: 0
+  maxStackSize: 1
+  basePrice: 1000
+  prefab: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  weight: 0
+  sprite: {fileID: 0}
+  questIdOnPickup: -1
+  inventorySizeX: 1
+  inventorySizeY: 1
+  anomalyScanLevel: 0
+  artifactScanLevel: 1

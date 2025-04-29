@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700094acf48941245ab6bc705df4d713, type: 3}
+  m_Name: Armor0
+  m_EditorClassIdentifier: 
+  uniqueName: i_armor_hide_coat
+  displayName: "\u041A\u043E\u0436\u0430\u043D\u0430\u044F \u043A\u0443\u0440\u0442\u043A\u0430"
+  description: "\u041E\u0431\u044B\u0447\u043D\u0430\u044F \u0441\u0442\u0430\u043B\u043A\u0435\u0440\u0441\u043A\u0430\u044F
+    \u043A\u0443\u0440\u0442\u043A\u0430."
+  questItem: 0
+  maxStackSize: 1
+  basePrice: 1200
+  prefab: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  weight: 2.5
+  sprite: {fileID: 0}
+  questIdOnPickup: -1
+  inventorySizeX: 2
+  inventorySizeY: 2
+  type: 0
+  armorEffects:
+  - effect: 1
+    value: 1
+  helmetEffects: []

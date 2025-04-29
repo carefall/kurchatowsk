@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd462fded79e02c4daec0f176ab81203, type: 3}
+  m_Name: Objective1
+  m_EditorClassIdentifier: 
+  Name: "\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C \u0441 \u0432\u043E\u043B\u043A\u043E\u043C"
+  type: 5
+  dead: 0
+  hiddenUntilDone: 0
+  hiddenUntilInProgress: 0
+  hiddenTarget: 0
+  allowNextParallel: 0
+  failQuestOnFail: 0
+  targetScene: Game
+  zoneSize: 0
+  targetPosition: {x: 0, y: 0, z: 0}
+  uniqueName: uh_volk
+  targetDialogue: {fileID: 11400000, guid: 53ce6481a88e3c54aa8d3a38f384670f, type: 2}
+  targetDialogueStageId: 3
+  faction: 
+  amount: 1

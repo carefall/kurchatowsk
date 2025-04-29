@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646d93be272141340a3d6054a5c1d904, type: 3}
+  m_Name: Dialogue0
+  m_EditorClassIdentifier: 
+  autoSelect: 1
+  stages:
+  - {fileID: 11400000, guid: 2fa54f93db2431144a46469cff22ab37, type: 2}
+  - {fileID: 11400000, guid: a0f814e976babcd44a9307f29bce4bd5, type: 2}
+  - {fileID: 11400000, guid: ea256d027212210438357c38bbfa01db, type: 2}
+  - {fileID: 11400000, guid: 272dacfb33105ca4cae42db288f5141a, type: 2}
+  - {fileID: 11400000, guid: 1991559528873414a808ff9bb9b35a67, type: 2}
+  - {fileID: 11400000, guid: 4044acd98af048541ac2add6397e93c9, type: 2}
+  - {fileID: 11400000, guid: f72a9cfa963dfd1448d27012c97b1b17, type: 2}
+  - {fileID: 11400000, guid: 1783e2e653e994f4385205870b329437, type: 2}
+  requirements:
+    completedQuests: 
+    questsNotInProgress: 
+    questInProgress: 0
+    stageInProgress: 1
+  escapable: 1
