@@ -2,30 +2,29 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static DialogueStage;
-using static DialogueStage.Answer;
 
 public class OptionUI : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI text;
-    [SerializeField] Button b;
+    private TextMeshProUGUI textAndButton;
 
     public int id;
     private Answer answer;
 
     public void Fill(int id, Answer answer)
     {
+        textAndButton = GetComponentInChildren<TextMeshProUGUI>();
         this.id = id;
-        text.text =$"{id+1}. {answer.answer}";
+        textAndButton.text =$"{id+1}. {answer.answer}";
         this.answer = answer;
-        b.enabled = true;
-        text.raycastTarget = true;
+        textAndButton.GetComponent<Button>().enabled = true;
+        textAndButton.raycastTarget = true;
         PlayerButtons.OnNumberPressed += ProcessKeyboard;
     }
     public void Clear()
     {
-        b.enabled=false;
-        text.raycastTarget=false;
-        text.text = "";
+        textAndButton.GetComponent<Button>().enabled = false;
+        textAndButton.raycastTarget=false;
+        textAndButton.text = "";
     }
 
     private void ProcessKeyboard(int num)

@@ -6,10 +6,6 @@ using TMPro;
 public class DialogueWindowWheelOptions : DialogueWindow
 {
     [SerializeField] Transform options;
-    [SerializeField] Image target, player;
-    [SerializeField] TextMeshProUGUI targetName, playerName;
-    [Multiline]
-    [SerializeField] string questNotification, healNotification;
     [SerializeField] Animator wheel;
 
     public new void Start()
@@ -31,8 +27,7 @@ public class DialogueWindowWheelOptions : DialogueWindow
 
     internal override void ProcessStartUI(Dialogue dialogue)
     {
-        //
-        wheel.Play("start");
+        wheel.Play("WheelSpin");
         FillAnswers(0);
     }
 
@@ -107,23 +102,20 @@ public class DialogueWindowWheelOptions : DialogueWindow
 
     internal override void FillAnswers(int id)
     {
-
-        int n = dialogue.GetStage(0).answers.Length;
+        int n = dialogue.GetStage(id).answers.Length;
         if (n == 1)
         {
             Answer answer = dialogue.GetStage(id).answers[0];
             Transform o = options.GetChild(0).transform;
             OptionUI opt = o.GetChild(0).GetComponent<OptionUI>();
             opt.Fill(0, answer);
-            // OptionUI option = Instantiate(optionPrefab, options);
-
         }
         else
         {
+            Transform o = options.GetChild(n-1).transform;
             for (int i = 0; i < n; i++)
             {
                 Answer answer = dialogue.GetStage(id).answers[i];
-                Transform o = options.GetChild(i).transform;
                 OptionUI opt = o.GetChild(i).GetComponent<OptionUI>();
                 opt.Fill(i, answer);
             }
