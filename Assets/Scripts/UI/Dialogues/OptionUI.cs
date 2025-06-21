@@ -26,6 +26,11 @@ public class OptionUI : MonoBehaviour
         textAndButton.raycastTarget=false;
         textAndButton.text = "";
     }
+    private void Start()
+    {
+
+        textAndButton = GetComponentInChildren<TextMeshProUGUI>();
+    }
 
     private void ProcessKeyboard(int num)
     {

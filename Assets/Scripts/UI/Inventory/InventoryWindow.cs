@@ -16,8 +16,11 @@ public class InventoryWindow : MonoBehaviour
     [SerializeField] Transform content;
     [SerializeField] InventoryCell cellPrefab;
     [SerializeField] TextMeshProUGUI weightText;
+    [SerializeField] WeaponSlot main, secondary, pistol;
     [SerializeField] TextMeshProUGUI moneyText;
+    private InventoryCell startCell;
     private float weight = 0;
+    [SerializeField] DragItem dragItem;
 
     public static InventoryWindow instance;
     private void Awake()
@@ -57,6 +60,7 @@ public class InventoryWindow : MonoBehaviour
         cells[x, y].origin = true;
         ItemUI itemUI = Instantiate(itemPrefab.gameObject, cells[x, y].transform).GetComponent<ItemUI>();
         itemUI.item = itemSO;
+        itemUI.origin = cells[x, y];
         itemUI.amount = 1;
         (itemUI.transform as RectTransform).localPosition = new Vector3(10, -10, 0);
         (itemUI.transform as RectTransform).sizeDelta
@@ -206,5 +210,20 @@ public class InventoryWindow : MonoBehaviour
             if (!ContainsItem(item.requiredItemUniqueName, item.requiredItemAmount)) return false;
         }
         return true;
+    }
+
+    internal void StartDrag(InventoryCell origin, Sprite sprite,int x,int y)
+    {
+        startCell = origin;
+        dragItem.SetUp(sprite, x, y);
+
+    }
+
+    internal void StopDrag(InventoryCell inventoryCell)
+    {
+            if(startCell == null) return;
+            //
+        startCell = null;
+        dragItem.gameObject.SetActive(false);
     }
 }

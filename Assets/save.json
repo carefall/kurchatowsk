@@ -1,9 +1,9 @@
 {
     "level": 1,
     "hp": 0,
-    "x": 128.0,
-    "y": 31.0,
-    "z": 128.0,
+    "x": 69.0,
+    "y": 30.0,
+    "z": 900.0,
     "xRot": 0.0,
     "yRot": 0.0,
     "zRot": 0.0,
@@ -26,13 +26,21 @@
         }
     ],
     "inventoryContent": [
-        {
-            "position": {
-                "x": 0,
-                "y": 0
-            },
-            "itemUniqueName": "i_med_medkit",
-            "amount": 1
-        }
+      {
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "itemUniqueName": "i_med_medkit",
+        "amount": 1
+      },
+      {
+        "position": {
+          "x": 1,
+          "y": 0
+        },
+        "itemUniqueName": "i_weapon_ak47",
+        "amount": 1
+      }
     ]
 }

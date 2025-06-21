@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
         float y = rb.linearVelocity.y;
         moveDirection.y = y;
         rb.linearVelocity = moveDirection;
+        if (PlayerData.instance.viewingInventory) return;
         transform.eulerAngles += new Vector3(0, pDelta.x * sensitivityX, 0);
         cameraRot.x += -pDelta.y * sensitivityY;
         cameraRot.x = Mathf.Clamp(cameraRot.x, -90, 90);

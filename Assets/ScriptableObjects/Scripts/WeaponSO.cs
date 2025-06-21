@@ -1,4 +1,5 @@
 using NaughtyAttributes;
+using System.Security.Cryptography.X509Certificates;
 using UnityEditor;
 using UnityEngine;
 
@@ -44,10 +45,11 @@ public class WeaponSO : ItemSO
 
     public AmmoSO ammoType;
     public BarrelAmmoSO barrelAmmoType;
+    public SlotType slotType;
 
     public enum SlotType
     {
-        MAIN, SECONDARY, GRENADE
+        MAIN, SECONDARY, PISTOL
     }
 
     private bool WithScope() => scopeAttachId >= 0;
